@@ -18,6 +18,6 @@ async def get_user(user_id: int):
     return await UserRepository.read_one(user_id)
 
 
-@router.get('/comments', response_model=Post_Pydantic)
-async def get_comment_by_id(user_id: int = None):
+@router.get('/posts', response_model=Post_Pydantic)
+async def get_post_by_id(user_id: int = None):
     return await PostRepository.read_one(user_id=user_id)

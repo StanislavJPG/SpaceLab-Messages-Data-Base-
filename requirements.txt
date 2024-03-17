@@ -2,3 +2,6 @@ tortoise-orm
 tortoise
 fastapi
 httpx
+pytest
+asgi_lifespan
+uvicorn
