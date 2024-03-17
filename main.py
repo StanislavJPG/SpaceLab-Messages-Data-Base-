@@ -2,7 +2,7 @@ from typing import List
 from fastapi import FastAPI
 from tortoise.exceptions import IntegrityError
 
-from models import User_Pydantic, User, Comment, Comment_Pydantic
+from models import User_Pydantic, User, Comment
 import httpx
 from tortoise import Tortoise
 from tortoise.contrib.fastapi import register_tortoise
